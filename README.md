@@ -1,1 +1,168 @@
-# gulbarga.deals
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gulbarga Deals | Ramzan Offers</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+    }
+
+    /* Header */
+    .header {
+      background-color: #ff3e3e;
+      color: white;
+      padding: 15px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .header h1 {
+      font-size: 36px;
+      margin: 0;
+    }
+
+    .header h2 {
+      font-size: 18px;
+      margin: 0;
+      font-weight: 400;
+    }
+
+    /* Menu */
+    nav.menu ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav.menu ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    nav.menu ul li a:hover {
+      color: #ffd700;
+    }
+
+    /* Search Bar */
+    .search-bar {
+      margin: 20px auto;
+      text-align: center;
+    }
+
+    .search-bar input {
+      width: 80%;
+      max-width: 500px;
+      padding: 10px;
+      font-size: 16px;
+      border: 2px solid #ff3e3e;
+      border-radius: 8px;
+    }
+
+    /* Restaurant Cards Grid */
+    .restaurant-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .restaurant-card {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+
+    .restaurant-card:hover {
+      transform: scale(1.03);
+    }
+
+    .restaurant-card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    .restaurant-card .content {
+      padding: 10px 15px;
+    }
+
+    .restaurant-card h3 {
+      margin: 0 0 5px 0;
+      font-size: 20px;
+    }
+
+    .restaurant-card p {
+      margin: 0;
+      font-size: 14px;
+      color: #555;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div>
+      <h1>Gulbarga Deals</h1>
+      <h2>Best Ramzan Offers in Gulbarga</h2>
+    </div>
+
+    <nav class="menu">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#offers">Offers</a></li>
+        <li><a href="#restaurants">Restaurants</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- SEARCH BAR -->
+  <div class="search-bar">
+    <input type="text" placeholder="Search restaurants or offers...">
+  </div>
+
+  <!-- RESTAURANT GRID -->
+  <section id="restaurants" class="restaurant-grid">
+    <div class="restaurant-card">
+      <img src="images/restaurant1.jpg" alt="Restaurant 1">
+      <div class="content">
+        <h3>Restaurant 1</h3>
+        <p>Best biryani in town</p>
+      </div>
+    </div>
+
+    <div class="restaurant-card">
+      <img src="images/restaurant2.jpg" alt="Restaurant 2">
+      <div class="content">
+        <h3>Restaurant 2</h3>
+        <p>Delicious desserts</p>
+      </div>
+    </div>
+
+    <div class="restaurant-card">
+      <img src="images/restaurant3.jpg" alt="Restaurant 3">
+      <div class="content">
+        <h3>Restaurant 3</h3>
+        <p>Top Ramzan deals</p>
+      </div>
+    </div>
+
+    <!-- Add more cards as needed -->
+  </section>
+
+</body>
+</html>
